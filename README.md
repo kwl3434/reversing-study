@@ -1,4 +1,5 @@
 # reversing-study
+
 리버싱 핵심원리 책 & visual studio 2017 & ollydbg를 이용한 리버싱 공부
 1. ollydbg설치하기
 2. IA-32 레지스터 분석
