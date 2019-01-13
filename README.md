@@ -10,7 +10,8 @@
 .
 .
 추가예정
-#window7환경에서 OllyDbg 설치하기 32bit
+
+# window7환경에서 OllyDbg 설치하기 32bit
 
 윈도우 10에서 ollydbg를 쓰는건 너무 빡세요..
 
