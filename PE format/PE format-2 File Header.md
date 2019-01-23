@@ -13,7 +13,9 @@ typedef struct _IMAGE_NT_HEADERS {
 제일 첫 멤버는 
 
 Signature로 50450000("PE"00)  의 값을 갖는다.
-
+<div>
+<img src="https://postfiles.pstatic.net/MjAxOTAxMjRfMjcw/MDAxNTQ4MjU1ODQ5MDMw.HwUWvvaQ5Xw2erEoLvfx_1-QyxL6UMFQo_ua9H4qQVAg.LKOxd2c-MXfXu-WeOHbDNCttvjUPz6i8nQ9grl5EGzgg.PNG.kwleepuppy/image.png?type=w773" width="90%"></img>
+</div>
 
 IMAGE_NT_HEADERS의 내용을 hex editor로 봤을때의 모습
 
@@ -87,7 +89,9 @@ PE파일 중에 Characteristics 값에 0002값이 없는 경우
 해당 파일의 빌드 시간을 나타낸 값이다.
 
 ​
-
+<div>
+<img src="https://postfiles.pstatic.net/MjAxOTAxMjRfNDAg/MDAxNTQ4MjU3ODYxMTkw.ivo9QjmdBt45r3CjdRThyic1mxqzWaSKJL0qBfe4YEcg.4gai2pgb7FYTqf7sR5ho3c4VQ1oixdErnv5LBGQTBiwg.PNG.kwleepuppy/image.png?type=w773" width="90%"></img>
+</div>
 
 이제 Hex Editer 에서 notepad.exe의 IMAGE_FILE_HEADER구조체를 확인해보면
 
