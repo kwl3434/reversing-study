@@ -4,10 +4,15 @@ NT Header
 NT Header 구조체 IMAGE_NT_HEADERS
 
 typedef struct _IMAGE_NT_HEADERS {
+
     DWORD Signature;                  // PE Signaure : 50450000 ascii("PE"00)
+    
     IMAGE_FILE_HEADER FileHeader;
+    
     IMAGE_OPTIONAL_HEADER32 OptionalHeader;
+    
 } IMAGE_NT_HEADERS32, *PIMAGE_NT_HEADERS32;
+
  3개의 멤버로 되어 있고
 
 제일 첫 멤버는 
@@ -28,13 +33,21 @@ NT Header - File Header
 IMAGE_FILE_HEADER 구조체이다.
 
 typedef struct _IMAGE_FILE_HEADER {
+
     WORD Machine;
+    
     WORD NumberOfSections;
+    
     DWORD TimeDateStamp;
+    
     DWORD PointerToSymbolTable;
+    
     DWORD NumberOfSymbols;
+    
     WORD SizeOfOptionalHeader;
+    
     WORD Characteristics;
+    
 } IMAGE_FILE_HEADER, *PIMAGE_FILE_HEADER
  1. Machine
 
