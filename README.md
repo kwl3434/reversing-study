@@ -447,7 +447,9 @@ Relocation이 발생해도 기준위치에 대한 상대주소가 변하지 않�
 DOS Header
 
 DOS 파일에 대한 하위 호환성을 고려하여 만든 것
+
 {
+
 //IMAGE_DOS_HEADER 구조체 크기 40 *e_magic과 e_lfanew가 핵심!
 typedef struct _IMAGE_DOS_HEADER{
     WORD e_magic;  //DOS signature : 4D5A ("MZ") 아스키값으로 MZ
@@ -469,7 +471,9 @@ typedef struct _IMAGE_DOS_HEADER{
     WORD e_res2[10];
     LONG e_lfanew;  //offset to NT header 파일에 따라 가변적인 값을 가짐
 }
+
 }
+
  위에 에디터로 본 notepad.exe에서
 
 첫 부분에 4D 5A가 쓰여있고 아스키로 MZ로  보여진다.
@@ -525,7 +529,9 @@ debug C:\Windows\notepad.exe
 NT Header
 
 NT Header 구조체 IMAGE_NT_HEADERS
+
 {
+
 typedef struct _IMAGE_NT_HEADERS {
 
     DWORD Signature;                  // PE Signaure : 50450000 ascii("PE"00)
@@ -535,6 +541,7 @@ typedef struct _IMAGE_NT_HEADERS {
     IMAGE_OPTIONAL_HEADER32 OptionalHeader;
     
 } IMAGE_NT_HEADERS32, *PIMAGE_NT_HEADERS32;
+
 }
  3개의 멤버로 되어 있고
 
@@ -554,7 +561,9 @@ NT Header - File Header
 파일의 개략적인 속성을 나타내는
 
 IMAGE_FILE_HEADER 구조체이다.
+
 {
+
 typedef struct _IMAGE_FILE_HEADER {
 
     WORD Machine;
@@ -572,6 +581,7 @@ typedef struct _IMAGE_FILE_HEADER {
     WORD Characteristics;
     
 } IMAGE_FILE_HEADER, *PIMAGE_FILE_HEADER
+
 }
  1. Machine
 
