@@ -1,4 +1,4 @@
-# NT Header - Optional Header
+# PE File Format-3 NT Header - Optional Header
 
 PE 헤더 구조체 중에서 가장 크기가 큰
 
