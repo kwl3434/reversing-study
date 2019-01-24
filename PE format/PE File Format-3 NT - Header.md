@@ -49,6 +49,9 @@ typedef struct _IMAGE_OPTIONAL_HEADER {
 
 } IMAGE_OPTIONAL_HEADER32, *PIMAGE_OPTIONAL_HEADER32;
 ```
+<div>
+<img src="https://postfiles.pstatic.net/MjAxOTAxMjVfMTk4/MDAxNTQ4MzQ3MDQyMjgz.YVFM4luJrma-GZ2usp-uEGWT8Syh9FZo9OiFItB_gRcg.EROjMlN__q0IzjCzhQkPyqxMY9DF5UdYs8CNOa6EqCUg.PNG.kwleepuppy/image.png?type=w773" width="90%"></img>
+</div>
  IMAGE_OPTIONAL_HEADER64
 
 
@@ -159,7 +162,9 @@ DataDirectory[D] = DELAY_IMPORT Directory
 DataDirectory[E] = COM_DESCRIPTOR Directory
 DataDirectory[F] = Reserved Directory
  ```
- 
+ <div>
+<img src="https://postfiles.pstatic.net/MjAxOTAxMjVfNDUg/MDAxNTQ4MzQyNTM0MjA0.X8A5QORSrvLQip06Pr_f7gwViWsDntJCeuj4xWIu-K0g.fLZR4U9yWYCx45-vOxRJEGbLjmxkxnYMs6i0YcyBohYg.PNG.kwleepuppy/image.png?type=w773" width="90%"></img>
+</div>
  ```c
 //IMAGE_OPTIONAL_HEADER  notepad.exe
 
