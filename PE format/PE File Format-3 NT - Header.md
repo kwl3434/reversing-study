@@ -3,7 +3,7 @@ NT Header - Optional Header
 PE 헤더 구조체 중에서 가장 크기가 큰
 
 IMAGE_OPTIONAL_HEADER32
-/`
+\`
 typedef struct _IMAGE_DATA_DIRECTORY {
 
     DWORD VirutualAddress;
@@ -48,7 +48,7 @@ typedef struct _IMAGE_OPTIONAL_HEADER {
   IMAGE_DATA_DIRECTORY DataDirectory[IMAGE_NUMBEROF_DIRECTORY_ENTRIES];
 
 } IMAGE_OPTIONAL_HEADER32, *PIMAGE_OPTIONAL_HEADER32;
-/`
+\`
  IMAGE_OPTIONAL_HEADER64
 
 
@@ -141,7 +141,7 @@ Subsystem의 값을 보고
 8. NumberOfRvaAndSizes
 
 IMAGE_DATA_DIRECTORY 구조체 배열의 각 항목마다 정의된 값을 가진다.
-/`
+\`
 DataDirectory[0] = EXPORT Directory
 DataDirectory[1] = IMPORT Directory
 DataDirectory[2] = RESOURCE Directory
@@ -158,8 +158,9 @@ DataDirectory[C] = IAT Directory
 DataDirectory[D] = DELAY_IMPORT Directory
 DataDirectory[E] = COM_DESCRIPTOR Directory
 DataDirectory[F] = Reserved Directory
- /`
- /`
+ \`
+ 
+ \`
 //IMAGE_OPTIONAL_HEADER  notepad.exe
 
 value    desciprtion
@@ -225,7 +226,7 @@ C160     DLL characteristics
 00000000 size of COM_DESCRPTOR Directory
 00000000 RVA of Reserved Directory
 00000000 size of Reserved Directory
-/`
+\`
  32비트와 64비트
 
 IMAGE_OPTIONAL_HEADER차이가 없을거 같다고 생각해서
