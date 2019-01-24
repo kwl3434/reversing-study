@@ -54,7 +54,7 @@ typedef struct _IMAGE_OPTIONAL_HEADER {
 
 필수적인 멤버들
 
-1. Magic
+## 1. Magic
 
 IMAGE_OPTIONAL_HEADER32인 경우에 10B
 
@@ -62,7 +62,7 @@ IMAGE_OPTIONAL_HEADER64인 경우에는 20B를 가짐
 
 ​
 
-2. AddressOfEntryPoint
+## 2. AddressOfEntryPoint
 
 EP(Entry Point)의 RVA(Relative Virtual Address)값을 가지고 있음
 
@@ -70,7 +70,7 @@ EP(Entry Point)의 RVA(Relative Virtual Address)값을 가지고 있음
 
 ​
 
-3. ImageBase
+## 3. ImageBase
 
 32비트 컴퓨터 프로세스의 가상 메모리는 0~FFFFFFFF 범위를 갖는다.
 
@@ -98,7 +98,7 @@ ImageBase + AddressOfEntryPoint 값으로 세팅한다.
 
 ​
 
-4. SectionAlignment, FileAlignment
+## 4. SectionAlignment, FileAlignment
 
 파일에서 섹션의 최소단위를 나타내는 것이 FileAlignment
 
@@ -108,13 +108,13 @@ ImageBase + AddressOfEntryPoint 값으로 세팅한다.
 
 ​
 
-5. SizeOfImage
+## 5. SizeOfImage
 
 가상 메모리에서  PE Image가 차지하는 크기를 나타낸다.
 
 ​
 
-6. SizeOfHeader
+## 6. SizeOfHeader
 
 PE헤더의 전체 크기를 나타낸다.
 
@@ -124,7 +124,7 @@ FileAlignment의 배수여야 한다.
 
 ​
 
-7. Subsystem
+## 7. Subsystem
 
 Subsystem의 값을 보고
 
@@ -138,7 +138,7 @@ Subsystem의 값을 보고
 
 ​
 
-8. NumberOfRvaAndSizes
+## 8. NumberOfRvaAndSizes
 
 IMAGE_DATA_DIRECTORY 구조체 배열의 각 항목마다 정의된 값을 가진다.
 ```c
