@@ -10,6 +10,13 @@
 7. IAT
 8. EAT
 
+CodeEngn Basic 
+1~20
+
+안티 디버깅 기법
+PEB
+TLS
+
 .
 .
 .
